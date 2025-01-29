@@ -47,46 +47,6 @@ export default function Home() {
 
       </section>
 
-      <section className="flex items-center">
-
-        <div className="flex items-center justify-start"
-          style={{
-            backgroundImage: `url("./image/contato-left.png")`,
-            width: '50%', height: '100vh', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
-          }}>
-
-          <h2 className="text-black text-8xl font-bold mt-96 ml-40">Contato</h2>
-
-        </div>
-
-
-        <div className="flex p-20"
-          style={{
-            backgroundImage: `url("./image/contato-right.png")`,
-            width: '50%', height: '100vh', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
-          }}>
-
-          <div className="p-10">
-            <div className="row mb-4">
-              <h3 className="font-bold text-black text-4xl">E-mail</h3>
-              <p className="text-black text-xl">zalendaadvogados@gmail.com</p>
-            </div>
-
-            <div className="row mb-4">
-              <h3 className="font-bold text-black text-4xl">Redes sociais</h3>
-              <p className="text-black text-xl">@zalenda.advogados</p>
-            </div>
-
-            <div className="row">
-              <h3 className="font-bold text-black text-4xl">Telefone</h3>
-              <p className="text-black text-xl">(69)99268-2118</p>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
-
       <section className="flex flex-col">
         <header className="flex flex-col bg-yellow-600 w-screen h-[30vh]">
           <h2 className="text-5xl font-bold ml-10 text-black mt-28">O que fazer?</h2>
@@ -113,6 +73,46 @@ export default function Home() {
               do seu contrato.</p>
           </article>
         </article>
+      </section>
+
+      <section className="flex items-center">
+
+        <div className="flex items-center justify-start"
+          style={{
+            backgroundImage: `url("./image/contato-left.png")`,
+            width: '50%', height: '100vh', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
+          }}>
+
+          <h2 className="text-black text-8xl font-bold mt-96 ml-40">Contato</h2>
+
+        </div>
+
+
+        <div className="flex p-20"
+          style={{
+            backgroundImage: `url("./image/contato-right.png")`,
+            width: '50%', height: '100vh', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
+          }}>
+
+          <div className="p-10">
+            <div className="row mb-4 pt-12">
+              <h3 className="font-bold text-black text-4xl">E-mail</h3>
+              <p className="text-black text-xl">zalendaadvogados@gmail.com</p>
+            </div>
+
+            <div className="row mb-4">
+              <h3 className="font-bold text-black text-4xl">Redes sociais</h3>
+              <p className="text-black text-xl">@zalenda.advogados</p>
+            </div>
+
+            <div className="row">
+              <h3 className="font-bold text-black text-4xl">Telefone</h3>
+              <p className="text-black text-xl">(69)99268-2118</p>
+            </div>
+          </div>
+
+        </div>
+
       </section>
 
     </div>
