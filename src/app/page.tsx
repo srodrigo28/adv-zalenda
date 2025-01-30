@@ -29,7 +29,7 @@ export default function Home() {
         </div>
 
         {/* modificar */}
-        <img src="./image/home.png" className="flex-1 relative" alt="" /> 
+        <img src="./image/home.png" className="flex-1 relative" alt="" />
         <div className="home-item">
           <h2 className="text-white md:text-6xl text-3xl font-bold md:mb-28">JUROS ABUSIVOS </h2>
 
@@ -102,44 +102,84 @@ export default function Home() {
           <h1 className=" font-extrabold p-4 w-full text-black text-7xl text-center"> Efeitos da <br /> revisão: </h1>
 
           <div className="bg-white p-5 text-black w-96 rounded-2xl" >
-              <p className="text-justify">A revisão de contratos de empréstimo
-                consiste em uma análise minuciosa
-                das cláusulas contratuais, buscando
-                identificar e corrigir eventuais
-                irregularidades e ilegalidades que
-                gerem onerosidade excessiva ao
-                devedor, seja ele pessoa física ou
-                jurídica. Esse procedimento tem como
-                objetivo reequilibrar a relação
-                contratual entre as partes, garantindo
-                que os termos do empréstimo estejam
-                de acordo com a lei e com os princípios
-                da boa-fé e da justiça contratual.
-              </p>
+            <p className="text-justify">A revisão de contratos de empréstimo
+              consiste em uma análise minuciosa
+              das cláusulas contratuais, buscando
+              identificar e corrigir eventuais
+              irregularidades e ilegalidades que
+              gerem onerosidade excessiva ao
+              devedor, seja ele pessoa física ou
+              jurídica. Esse procedimento tem como
+              objetivo reequilibrar a relação
+              contratual entre as partes, garantindo
+              que os termos do empréstimo estejam
+              de acordo com a lei e com os princípios
+              da boa-fé e da justiça contratual.
+            </p>
           </div>
         </div>
 
-        <div className="bg-slate-900 flex-1">
+        <div className="bg-black flex-1">
           <div className="absolute top-10 left-10  z-10">
             <Logo />
           </div>
 
-          <div className="flex flex-col gap-3 items-center text-white">
-            
+          <div className="flex flex-col gap-3 text-white p-20 m-20">
+
             <div className="flex mt-10 gap-2">
               <Clock2 color="#fff" size={25} className="" />
-              <p className="">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+
+              <p className="">Redução do saldo devedor.</p>
             </div>
 
             <div className="flex gap-2">
               <Clock2 color="#fff" size={25} className="" />
-              <p className="">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+
+              <p className="">Diminuição do valor das parcelas.</p>
+            </div>
+
+            <div className="flex gap-2">
+              <Clock2 color="#fff" size={25} className="" />
+
+              <p className="">Restituição de valores pagos a maior, em
+                dobro, com correção e juros.
+              </p>
+            </div>
+
+            <div className="flex gap-2">
+              <Clock2 color="#fff" size={25} className="" />
+
+              <p className="">Anulação de cláusulas abusivas.</p>
+            </div>
+
+            <div className="flex gap-2">
+              <Clock2 color="#fff" size={25} className="" />
+
+              <p className="">Renegociação do contrato em condições mais
+                justas.
+              </p>
+            </div>
+
+            <div className="flex gap-2">
+              <Clock2 color="#fff" size={25} className="" />
+
+              <p className="">É possível realizar a revisão mesmo que você
+                esteja com parcelas em atraso e estiver sendo
+                cobrado administrativamente ou
+                judicialmente pelo banco.
+              </p>
             </div>
 
           </div>
+
+          <div>
+            <p>
+              Agende uma consulta para saber mais.
+            </p>
+          </div>
         </div>
 
-        
+
 
       </section>
 
