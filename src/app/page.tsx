@@ -1,7 +1,9 @@
 'use client'
+import { Logo } from "@/components/logo";
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useLayoutEffect } from "react";
+import { Clock2 } from "lucide-react"
 
 export default function Home() {
 
@@ -17,10 +19,17 @@ export default function Home() {
     }
   }, [])
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-screen">
 
-      <section className="flex">
-        <img src="./image/home.png" className="flex-1 relative" alt="" />
+      {/* 1 sessão pronto */}
+      <section className="flex relative">
+
+        <div className="absolute top-10 left-10  z-10">
+          <Logo />
+        </div>
+
+        {/* modificar */}
+        <img src="./image/home.png" className="flex-1 relative" alt="" /> 
         <div className="home-item">
           <h2 className="text-white md:text-6xl text-3xl font-bold md:mb-28">JUROS ABUSIVOS </h2>
 
@@ -28,11 +37,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col items-center session-2 p-20"
+      {/* 2 sessão pronto */}
+      <section className="flex flex-col items-center session-2 p-20 relative"
         style={{
           backgroundImage: `url("./image/page2.png")`,
           width: '100%', height: '100vh', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
         }}>
+
+        <div className="absolute top-10 left-10  z-10">
+          <Logo />
+        </div>
 
         <h2 className="text-6xl mt-16 mb-16">Empréstimo com juros e taxas indevidas?</h2>
 
@@ -47,7 +61,13 @@ export default function Home() {
 
       </section>
 
-      <section className="flex flex-col">
+      {/* 3 sessão pronto */}
+      <section className="flex flex-col relative">
+
+        <div className="absolute top-10 left-10  z-10">
+          <Logo />
+        </div>
+
         <header className="flex flex-col bg-yellow-600 w-screen h-[30vh]">
           <h2 className="text-5xl font-bold ml-10 text-black mt-28">O que fazer?</h2>
         </header>
@@ -74,6 +94,55 @@ export default function Home() {
           </article>
         </article>
       </section>
+
+      {/* 4 sessão pronto */}
+      <section className="flex relative h-screen">
+
+        <div className="flex-1 bg-yellow-600 flex flex-col justify-center items-center">
+          <h1 className=" font-extrabold p-4 w-full text-black text-7xl text-center"> Efeitos da <br /> revisão: </h1>
+
+          <div className="bg-white p-5 text-black w-96 rounded-2xl" >
+              <p className="text-justify">A revisão de contratos de empréstimo
+                consiste em uma análise minuciosa
+                das cláusulas contratuais, buscando
+                identificar e corrigir eventuais
+                irregularidades e ilegalidades que
+                gerem onerosidade excessiva ao
+                devedor, seja ele pessoa física ou
+                jurídica. Esse procedimento tem como
+                objetivo reequilibrar a relação
+                contratual entre as partes, garantindo
+                que os termos do empréstimo estejam
+                de acordo com a lei e com os princípios
+                da boa-fé e da justiça contratual.
+              </p>
+          </div>
+        </div>
+
+        <div className="bg-slate-900 flex-1">
+          <div className="absolute top-10 left-10  z-10">
+            <Logo />
+          </div>
+
+          <div className="flex flex-col gap-3 items-center text-white">
+            
+            <div className="flex mt-10 gap-2">
+              <Clock2 color="#fff" size={25} className="" />
+              <p className="">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            </div>
+
+            <div className="flex gap-2">
+              <Clock2 color="#fff" size={25} className="" />
+              <p className="">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            </div>
+
+          </div>
+        </div>
+
+        
+
+      </section>
+
 
       <section className="flex items-center">
 
