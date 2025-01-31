@@ -4,6 +4,8 @@ import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useLayoutEffect } from "react";
 import { Clock2 } from "lucide-react"
+import { ItemText } from "@/components/ItemText/intext";
+import { ItemBox } from "@/components/ItemBox";
 
 export default function Home() {
 
@@ -124,62 +126,42 @@ export default function Home() {
             <Logo />
           </div>
 
-          <div className="flex flex-col gap-3 text-white p-20 m-20">
+            <ItemText conteudo="Redução do saldo devedor." />
+            <ItemText conteudo="Diminuição do valor das parcelas."/>
+            <ItemText conteudo="Restituição de valores pagos a maior, em dobro, com correção e juros." />
+            <ItemText conteudo="Anulação de cláusulas abusivas." />
+            <ItemText conteudo="Renegociação do contrato em condições mais justas." />
+            <ItemText conteudo="É possível realizar a revisão mesmo que você esteja com parcelas em atraso e estiver sendo
+                cobrado administrativamente ou judicialmente pelo banco." />
 
-            <div className="flex mt-10 gap-2">
-              <Clock2 color="#fff" size={25} className="" />
-
-              <p className="">Redução do saldo devedor.</p>
-            </div>
-
-            <div className="flex gap-2">
-              <Clock2 color="#fff" size={25} className="" />
-
-              <p className="">Diminuição do valor das parcelas.</p>
-            </div>
-
-            <div className="flex gap-2">
-              <Clock2 color="#fff" size={25} className="" />
-
-              <p className="">Restituição de valores pagos a maior, em
-                dobro, com correção e juros.
-              </p>
-            </div>
-
-            <div className="flex gap-2">
-              <Clock2 color="#fff" size={25} className="" />
-
-              <p className="">Anulação de cláusulas abusivas.</p>
-            </div>
-
-            <div className="flex gap-2">
-              <Clock2 color="#fff" size={25} className="" />
-
-              <p className="">Renegociação do contrato em condições mais
-                justas.
-              </p>
-            </div>
-
-            <div className="flex gap-2">
-              <Clock2 color="#fff" size={25} className="" />
-
-              <p className="">É possível realizar a revisão mesmo que você
-                esteja com parcelas em atraso e estiver sendo
-                cobrado administrativamente ou
-                judicialmente pelo banco.
-              </p>
-            </div>
-
-          </div>
-
-          <div>
-            <p>
-              Agende uma consulta para saber mais.
-            </p>
+          <div> 
+            <p> Agende uma consulta para saber mais. </p>
           </div>
         </div>
+        
 
+      </section>
 
+      <section className="flex flex-col relative h-screen bg-white">
+        <div style={{ backgroundImage: `url("./image/topo.png")`,
+            width: '100%', height: '25vh', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}></div>
+        
+        <div className="flex justify-evenly w-full m-2 text-black bg-gray-100 h-[75vh] pt-10">
+          
+        <ItemBox 
+          imageURL="./image/icon1.png"
+          imageAlt="text"
+          title="Mudar o titulo"
+          conteudoText="#02"
+          conteudoText="#03"
+          conteudoText="#04"
+          conteudoText="#05"
+        />
+
+          <div className="flex flex-col items-center w-96">#02</div>
+          <div className="flex flex-col items-center w-96">#03</div>
+          <div className="flex flex-col items-center w-96">#04</div>
+        </div>
 
       </section>
 
@@ -189,7 +171,7 @@ export default function Home() {
         <div className="flex items-center justify-start"
           style={{
             backgroundImage: `url("./image/contato-left.png")`,
-            width: '50%', height: '100vh', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
+            width: '100%', height: '100vh', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
           }}>
 
           <h2 className="text-black text-8xl font-bold mt-96 ml-40">Contato</h2>
