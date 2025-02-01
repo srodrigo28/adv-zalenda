@@ -6,21 +6,23 @@ interface ItemProps {
 }
 
 interface ItemBoxProps {
-    imageURL: string;
-    imageAlt: string;
-    title: string
-    
-    className?: string
+    icon?: React.ReactNode;
+    title: string;
+    items: ItemProps[];
+    className?: string;
 }
 
-export function ItemBox( { imageURL, imageAlt, title, className } : ItemBoxProps) { 
+export function ItemBox( { icon, title, className, items } : ItemBoxProps) { 
     return(
-        <div className={ `${className} flex flex-col items-center w-96` }>
-            <img src={imageURL} alt={imageAlt} />
-            <h3>{title}</h3>
-            <ItemInBox conteudoText="#001" />
-            <ItemInBox conteudoText="#002" />
-            <ItemInBox conteudoText="#003" />
+        <div className={ `${className} flex flex-col items-center w-96 hover:bg-green-600` }>
+            {icon}
+            <h3 className="text-3xl font-semibold">{title}</h3>
+            {items.map((item) => (
+                <div key={item.conteudoText} className=" flex gap-2 items-center justify-center m-5">
+                    <Clock2 />
+                    <h3>{item.conteudoText}</h3>
+                </div>
+            ))}
           </div>
     )
 }

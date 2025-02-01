@@ -3,7 +3,8 @@ import { Logo } from "@/components/logo";
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useLayoutEffect } from "react";
-import { Clock2 } from "lucide-react"
+import { CiBag1 } from "react-icons/ci";
+import { AiOutlineGlobal } from "react-icons/ai";
 import { ItemText } from "@/components/ItemText/intext";
 import { ItemBox } from "@/components/ItemBox";
 
@@ -146,21 +147,35 @@ export default function Home() {
         <div style={{ backgroundImage: `url("./image/topo.png")`,
             width: '100%', height: '25vh', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}></div>
         
-        <div className="flex justify-evenly w-full m-2 text-black bg-gray-100 h-[75vh] pt-10">
+        <div className="flex justify-evenly w-full m-2 text-black h-[75vh] pt-10">
           
-        <ItemBox 
-          imageURL="./image/icon1.png"
-          imageAlt="text"
-          title="Mudar o titulo"
-          conteudoText="#02"
-          conteudoText="#03"
-          conteudoText="#04"
-          conteudoText="#05"
+        <ItemBox  title="Mudar o titulo"
+          items={[{ conteudoText: "item 1" }, { conteudoText: "item 2" }, { conteudoText: "item 3" }]}
         />
 
-          <div className="flex flex-col items-center w-96">#02</div>
-          <div className="flex flex-col items-center w-96">#03</div>
-          <div className="flex flex-col items-center w-96">#04</div>
+        <ItemBox icon={<AiOutlineGlobal size={100} />} title="Mudar o titulo"
+          items={[
+            { conteudoText: "item 1" }, 
+            { conteudoText: "item 2" }, 
+            { conteudoText: "item 3" },
+            { conteudoText: "item 4" },
+            { conteudoText: "item 5" },
+          ]}
+        />
+
+        <ItemBox icon={<CiBag1 size={100}/> }   title="Mudar o titulo"
+          items={[{ conteudoText: "item 1" }, { conteudoText: "item 2" }, { conteudoText: "item 3" }]}
+        />
+
+        <ItemBox title="Mudar o titulo"
+          items={[
+            { conteudoText: "item 1" }, 
+            { conteudoText: "item 2" }, 
+            { conteudoText: "item 3" },
+            { conteudoText: "item 4" },
+            { conteudoText: "item 5" },
+          ]}
+        />
         </div>
 
       </section>
