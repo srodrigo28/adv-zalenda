@@ -127,60 +127,80 @@ export default function Home() {
             <Logo />
           </div>
 
-            <ItemText conteudo="Redução do saldo devedor." />
-            <ItemText conteudo="Diminuição do valor das parcelas."/>
-            <ItemText conteudo="Restituição de valores pagos a maior, em dobro, com correção e juros." />
-            <ItemText conteudo="Anulação de cláusulas abusivas." />
-            <ItemText conteudo="Renegociação do contrato em condições mais justas." />
-            <ItemText conteudo="É possível realizar a revisão mesmo que você esteja com parcelas em atraso e estiver sendo
+          <ItemText conteudo="Redução do saldo devedor." />
+          <ItemText conteudo="Diminuição do valor das parcelas." />
+          <ItemText conteudo="Restituição de valores pagos a maior, em dobro, com correção e juros." />
+          <ItemText conteudo="Anulação de cláusulas abusivas." />
+          <ItemText conteudo="Renegociação do contrato em condições mais justas." />
+          <ItemText conteudo="É possível realizar a revisão mesmo que você esteja com parcelas em atraso e estiver sendo
                 cobrado administrativamente ou judicialmente pelo banco." />
 
-          <div> 
+          <div>
             <p> Agende uma consulta para saber mais. </p>
           </div>
         </div>
-        
+
 
       </section>
 
+      {/* 5 sessão pronto */}  
       <section className="flex flex-col relative h-screen bg-white">
-        <div style={{ backgroundImage: `url("./image/topo.png")`,
-            width: '100%', height: '25vh', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}></div>
-        
+        <div style={{
+          backgroundImage: `url("./image/topo.png")`,
+          width: '100%', height: '25vh', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
+        }}></div>
+
         <div className="flex justify-evenly w-full m-2 text-black h-[75vh] pt-10">
-          
-        <ItemBox  title="Mudar o titulo"
-          items={[{ conteudoText: "item 1" }, { conteudoText: "item 2" }, { conteudoText: "item 3" }]}
-        />
 
-        <ItemBox icon={<AiOutlineGlobal size={100} />} title="Mudar o titulo"
-          items={[
-            { conteudoText: "item 1" }, 
-            { conteudoText: "item 2" }, 
-            { conteudoText: "item 3" },
-            { conteudoText: "item 4" },
-            { conteudoText: "item 5" },
-          ]}
-        />
+          <ItemBox icon={<CiBag1 size={100} />} title="Mudar o titulo"
+            items={[
+              { conteudoText: "Defesa estratégica em execuções fiscais" },
+              { conteudoText: "Recuperação eficaz de créditos" },
+              { conteudoText: "Revisão e planejamento tributário" },
+              { conteudoText: "Elaboração e análise de contratos" },
+              { conteudoText: "Regularização e gestão imobiliária" },
+            ]}
+          />
 
-        <ItemBox icon={<CiBag1 size={100}/> }   title="Mudar o titulo"
-          items={[{ conteudoText: "item 1" }, { conteudoText: "item 2" }, { conteudoText: "item 3" }]}
-        />
+          <ItemBox icon={<AiOutlineGlobal size={100} />} title="Mudar o titulo"
+            items={[
+              { conteudoText: "Defesa especializada em ações trabalhistas" },
+              { conteudoText: "Gestão estratégica de riscos trabalhistas" },
+              { conteudoText: "Acompanhamento técnico em perícias" },
+            ]}
+          />
 
-        <ItemBox title="Mudar o titulo"
-          items={[
-            { conteudoText: "item 1" }, 
-            { conteudoText: "item 2" }, 
-            { conteudoText: "item 3" },
-            { conteudoText: "item 4" },
-            { conteudoText: "item 5" },
-          ]}
-        />
+          <ItemBox icon={<CiBag1 size={100} />} title="Mudar o titulo"
+            items={[
+              { conteudoText: "Registro de marcas e patentes" },
+              { conteudoText: "Obtenção de licenças e alvarás" },
+              { conteudoText: "Assessoria em licitações e editais" },
+              { conteudoText: "Defesa em processos ambientais" },
+            ]}
+          />
+
+          <ItemBox icon={<AiOutlineGlobal size={100} />} title="Mudar o titulo"
+            items={[
+              { conteudoText: "Benefícios de assistência social" },
+              { conteudoText: "Previdência e planejamento financeiro" },
+              { conteudoText: "Planos de saúde e cobertura médica" },
+              { conteudoText: "Defesa em processos administrativos" },
+            ]}
+          />
         </div>
 
       </section>
 
+      {/* 6 sessão pronto */}
+      <section className="flex relative h-screen">     
 
+        <div className="absolute top-10 left-10  z-10">
+            <Logo />
+        </div>
+
+      </section>
+
+      {/* 7 sessão pronto */}
       <section className="flex items-center">
 
         <div className="flex items-center justify-start"
