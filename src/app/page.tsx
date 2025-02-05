@@ -191,16 +191,31 @@ export default function Home() {
 
       </section>
 
-      {/* 6 sessão pronto */}
-      <section className="flex relative h-screen">     
-
+      {/* 6 sessão  */}
+      <section className="flex relative h-screen" style={{
+          backgroundImage: `url("./image/perfil-page.png")`,
+          width: '100%', height: '100vh', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
+        }}>     
+        
         <div className="absolute top-10 left-10  z-10">
             <Logo />
         </div>
 
+        <div className=" w-[35%] flex flex-col items-center h-96 relative">
+          <img width={400} src="./image/perfil.png" alt="" className="mt-64 ml-64"/>
+          <h2 className="text-yellow-500 text-3xl font-bold mt-96 ml-60 absolute top-72 ">Iago Zalenda #44</h2>
+        </div>
+
+        <div className=" w-[700px] h-[600px] animate-pulse bg-slate-900 mt-32 mr-20 p-10 flex flex-col gap-5 rounded-lg ml-44">
+          <p> O escritório ZALENDA ADVOGADOS, é uma sociedade de advogados, sediado em Porto Velho-RO, com atuação On-line em Todo o Território Nacional, através de parcerias estratégicas. </p>
+          <p> Toda a jornada iniciou em 2015, por seu sócio fundador Iágo Zalenda, que após iniciar sua militância junto a grandes e renomados escritórios, adquirindo vasta Experiência, decidiu por dar continuidade a sua via Empreendedora, e que hoje, no escritório, conta com uma equipe de respeitados profissionais, e atuação ativa e especializada em prol dos interesses de seus clientes . </p>
+          <p> O sócio fundador, Iágo Zalenda, acumulou experiência significativa no mercado financeiro, participando em instituições renomadas. Essa trajetória confere-lhe um profundo conhecimento em operações bancárias e no atendimento às demandas de empresas de diversos setores. Sua expertise no Direito Bancário fortalece o posicionamento do escritório em questões relacionadas às instituições financeiras, agronegócio, setores e comércio. </p>
+          <p> Com estrutura robusta e tecnologia de ponta, o Zalenda Advogados presta serviços jurídicos de alta qualidade em todo o Brasil, otimizando tempo e custos para seus clientes. Nosso compromisso com a ética, a cooperação e a confiabilidade é o que nos diferencia e consolida como referência na advocacia empresarial e bancária. </p>
+        </div>
+
       </section>
 
-      {/* 7 sessão pronto */}
+      {/* 7 sessão  */}
       <section className="flex items-center">
 
         <div className="flex items-center justify-start"
