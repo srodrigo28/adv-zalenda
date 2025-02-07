@@ -3,10 +3,11 @@ import { Logo } from "@/components/logo";
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useLayoutEffect } from "react";
-import { CiBag1 } from "react-icons/ci";
+import { CiBag1, CiGlobe } from "react-icons/ci";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { ItemText } from "@/components/ItemText/intext";
 import { ItemBox } from "@/components/ItemBox";
+import { FaHandshakeAngle, FaRegUser } from "react-icons/fa6";
 
 export default function Home() {
 
@@ -180,7 +181,7 @@ export default function Home() {
 
         <div className="md:flex lg:mt-40 justify-evenly w-full m-2 text-black h-[75vh] pt-5 lg:p-10">
 
-          <ItemBox icon={<CiBag1 size={100} className="w-14 lg:w-56" />} title="Mudar o titulo"
+          <ItemBox data-aos="zoom-in" icon={<CiBag1 size={100} className="w-14 lg:w-56" />} title="Blindagem patrimonial"
             items={[
               { conteudoText: "Defesa estratégica em execuções fiscais" },
               { conteudoText: "Recuperação eficaz de créditos" },
@@ -190,7 +191,7 @@ export default function Home() {
             ]}
           />
 
-          <ItemBox icon={<AiOutlineGlobal size={100} className="w-14 lg:w-44" />} title="Mudar o titulo"
+          <ItemBox icon={<FaHandshakeAngle  size={100} className="w-14 lg:w-44" />} title="Trabalhista"
             items={[
               { conteudoText: "Defesa especializada em ações trabalhistas" },
               { conteudoText: "Gestão estratégica de riscos trabalhistas" },
@@ -198,7 +199,7 @@ export default function Home() {
             ]}
           />
 
-          <ItemBox icon={<CiBag1 size={100} className="w-14 lg:w-44" />} title="Mudar o titulo"
+          <ItemBox icon={<AiOutlineGlobal size={100} className="w-14 lg:w-44" />} title="Empresarial"
             items={[
               { conteudoText: "Registro de marcas e patentes" },
               { conteudoText: "Obtenção de licenças e alvarás" },
@@ -207,7 +208,7 @@ export default function Home() {
             ]}
           />
 
-          <ItemBox icon={<AiOutlineGlobal size={100} className="w-14 lg:w-44" />} title="Mudar o titulo"
+          <ItemBox icon={<FaRegUser  size={100} className="w-14 lg:w-44" />} title="Para você"
             items={[
               { conteudoText: "Benefícios de assistência social" },
               { conteudoText: "Previdência e planejamento financeiro" },
