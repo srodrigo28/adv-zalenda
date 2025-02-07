@@ -8,7 +8,6 @@ import { AiOutlineGlobal } from "react-icons/ai";
 import { ItemText } from "@/components/ItemText/intext";
 import { ItemBox } from "@/components/ItemBox";
 
-
 export default function Home() {
 
   useLayoutEffect(() => {
