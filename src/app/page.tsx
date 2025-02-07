@@ -52,24 +52,23 @@ export default function Home() {
       </section>
 
       {/* 2 sessão pronto SESSÃO ESTÁ OCULTA */}
-      <section className="hidden flex-col items-center session-2 p-20 relative text-white" style={{
+      <section className="flex flex-col items-center session-2 h-[120vh] lg:h-[90vh] p-20 relative text-white" style={{
           backgroundImage: `url("./image/page2.png")`,
           width: '100', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
         }}> 
 
-        <div className="absolute top-10 left-10  z-10">
+        <div className="absolute lg:top-10 top-5 left-10  z-10">
           <Logo />
         </div>
 
-        <h2 className="text-xl lg:text-7xl mt-16 mb-16 w-[350px] -  ml-3 lg:w-[800px] md:text-start lg:text-center">Empréstimo com juros e taxas indevidas?</h2>
+        <h2 className="text-xl lg:text-7xl lg:mt-16 mt-8 mb-8 lg:mb-16 w-[350px] -  ml-3 lg:w-[800px] md:text-start lg:text-center">Empréstimo com juros e taxas indevidas?</h2>
 
-        <p className="text-md px-2 lg:text-2xl text-start md:text-center -ml-5 w-[320px] ">
+        <p className="text-md px-2 lg:mt-20 lg:text-2xl text-justify md:text-center lg:w-[1280px] w-[320px] ">
           Os bancos frequentemente aplicam taxas e juros abusivos em contratos de empréstimos e 
           financiamentos, e ainda incluem produtos indesejados sem o conhecimento do cliente.
           Revisar esses contratos pode recuperar valores pagos indevidamente e reduzir custos.
         </p>
-
-        <p className="text-2xl mt-10 text-center lg:w-[1200px] hidden md:block">
+        <p className="text-md mt-10 px-2 lg:mt-20 lg:text-2xl text-justify md:text-center lg:w-[1280px] w-[320px] ">
           Acrescentar produtos ou serviços não solicitados nos contratos de empréstimos, configura prática abusiva conhecida como venda casada , proibida pelo Código de Defesa do Consumidor. Exemplos comuns incluem: Seguro Prestamista, Pacotes de Serviços Bancários, Títulos de Capitalização.
         </p>
 
@@ -124,7 +123,7 @@ export default function Home() {
       </section>
 
       {/* 4 sessão pronto */}
-      <section className="flex relative lg:h-screen h-[180vh] flex-col lg:flex-row">
+      <section className="flex relative h-[200vh] lg:h-[100vh] flex-col lg:flex-row">
 
         <div className="flex-1 bg-yellow-600 flex flex-col justify-center px-5 items-center">
           <h1 className=" font-extrabold p-4 w-full text-black text-7xl text-center"> Efeitos da <br /> revisão: </h1>
@@ -169,7 +168,7 @@ export default function Home() {
       </section>
 
       {/* 5 sessão pronto Conheça Nossos Serviços */}  
-      <section className="flex flex-col relative h-[160vh] justify-center max-w[1280px mx-auto] lg:h-screen bg-white">
+      <section className="flex flex-col relative h-[100vh] justify-center max-w[1280px mx-auto] lg:h-screen bg-white">
         <div style={{
           backgroundImage: `url("./image/topo.png")`,
           width: '100%', height: '25vh', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
