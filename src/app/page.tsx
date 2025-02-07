@@ -21,10 +21,11 @@ export default function Home() {
       gsap.killTweensOf(".home-item")
     }
   }, [])
+  
   return (
     <div className="flex flex-col w-screen relative">
 
-      {/** ALTERAR O TELEFONE */}
+      {/** WHATS OK TELEFONE */}
       <a href="https://api.whatsapp.com/send?phone=5569992682118&text=Quero%20fazer%20um%20agendamento%20hoje!"
         target="_blank">
         <button className="z-50 fixed bottom-10 right-2 animate-pulse">
