@@ -52,11 +52,10 @@ export default function Home() {
       </section>
 
       {/* 2 sessão pronto */}
-      <section className="flex flex-col items-center session-2 p-20 relative text-white"
-        style={{
+      <section className="flex flex-col items-center session-2 p-20 relative text-white" style={{
           backgroundImage: `url("./image/page2.png")`,
-          width: '100%', height: '100vh', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
-        }}>
+          width: '100', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
+        }}> 
 
         <div className="absolute top-10 left-10  z-10">
           <Logo />
