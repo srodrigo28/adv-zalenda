@@ -90,32 +90,31 @@ export default function Home() {
         lg:w-screen h-[90vh] lg:h-[60vh] p-2 lg:p-10 md:0">
           
           <article className="flex-1 md:p-8 lg:mt-20 flex flex-col w-[350px] mx-auto items-center md:flex-col">
-            <img className="self-center mt-10 lg:mt-1 item-p-1 mb-4 md:mr-5 lg:w-[100px] w-[70px]" src="image/icon-balanca.png" alt="" />
-            
+          <img alt=""  width={100} src="/image/icon-graph.svg" className="self-center mb-5 md:mr-5 lg:w-[100px] w-[70px] h-[100]" />
             <div className="border-t-2 mt-4 ">
-              <h2 className="text-white mb-5">1º Passo</h2>
+              <h2 className="text-white lg:mb-5 lg:text-4xl lg:mt-5">1º Passo</h2>
               
-              <p className="text-white">Agenda uma consulta com nossos advogados especialistas e faça uma análise gratuita
+              <p className="text-white lg:text-2xl mt-2">Agenda uma consulta com nossos advogados especialistas e faça uma análise gratuita
                 do seu contrato.</p>
             </div>
 
           </article>
           
           <article className="flex-1 md:p-8 lg:mt-20 flex flex-col w-[350px] mx-auto items-center md:flex-col">
-          <img className="self-center mb-5 item-p-1 md:mr-5 lg:w-[100px] w-[70px]" src="image/icone-money.png" width={100} alt="" />
+          <img alt="" width={100} src="/image/icon-money.svg" className="self-center lg:mb-5 md:mr-5 lg:w-[100px] w-[70px] h-[100]"/>
+          
             <div className="border-t-2 mt-4">
-              <h2 className="text-white mb-5">2º Passo</h2>
-              <p className="text-white">Agenda uma consulta com nossos advogados especialistas e faça uma análise gratuita
+              <h2 className="text-white lg:mb-5 lg:text-4xl lg:mt-5">2º Passo</h2>
+              <p className="text-white lg:text-2xl">Agenda uma consulta com nossos advogados especialistas e faça uma análise gratuita
                 do seu contrato.</p>
             </div>
           </article>
           
           <article className="flex-1 md:p-8 lg:mt-20 flex flex-col w-[350px] mx-auto items-center md:flex-col">
-          <img className="self-center item-p-1 mb-5 md:mr-5 lg:w-[100px] w-[70px]" src="image/icon-arrow.png" width={100} alt="" />
-            
+          <img alt="" width={100} src="/image/icon-balance.svg" className="self-center mb-5 md:mr-5 lg:w-[100px] w-[70px] h-[100]" />
             <div className="border-t-2 mt-4">
-            <h2 className="text-white mb-5">3º Passo</h2>
-            <p className="text-white">Agenda uma consulta com nossos advogados especialistas e faça uma análise gratuita
+            <h2 className="text-white mb-5 lg:text-4xl lg:mt-5">3º Passo</h2>
+            <p className="text-white lg:text-2xl">Agenda uma consulta com nossos advogados especialistas e faça uma análise gratuita
               do seu contrato.</p>
             </div>
           </article>
