@@ -25,21 +25,18 @@ export default function Home() {
     <div className="flex flex-col w-screen">
 
       {/* 1 sessão pronto */}
-      <section className="flex relative w-full">
+      <section className="flex relative">
 
-        <div className="absolute top-2 md:top-10 left-10  z-10">
+        <div className="absolute top-10 left-10  z-10">
           <Logo />
         </div>
 
         {/* modificar */}
         <img src="./image/home.png" className="flex-1 relative" alt="" />
         <div className="home-item">
-          <h2 className="
-          text-white lg:text-6xl text-xl md:mb-28 bg-zinc-900/45 p-2 
-          rounded-md lg:mt-32 mt-16 -ml-5 lg:ml-10 font-bold">JUROS ABUSIVOS </h2>
+          <h2 className="text-white md:text-6xl text-3xl font-bold md:mb-28">JUROS ABUSIVOS </h2>
 
-          <p className="lg:text-3xl text-[8px] -ml-3 lg:ml-10 text-start md:text-center bg-yellow-600 
-          p-2 -pl-2 lg:pl-5 rounded-xl font-semibold"> Saiba se você está pagando juros abusivos <span className=" md:block hidden">ou taxas indevidas.</span> </p>
+          <p className="md:text-xl text-sm text-center  bg-yellow-600 p-2 rounded-xl font-semibold px-5">  Saiba se você está pagando juros abusivos ou taxas indevidas. </p>
         </div>
       </section>
 
@@ -54,15 +51,14 @@ export default function Home() {
           <Logo />
         </div>
 
-        <h2 className="text-xl lg:text-7xl mt-16 mb-16 -ml-32 w-[250px] lin lg:w-[800px] md:text-start lg:text-center">Empréstimo com juros e taxas indevidas?</h2>
+        <h2 className="text-6xl mt-16 mb-16">Empréstimo com juros e taxas indevidas?</h2>
 
-        <p className="text-md px-2 lg:text-2xl text-start md:text-center -ml-36 w-[220px] lg:w-[1200px]">
-          Os bancos frequentemente aplicam taxas e juros abusivos em contratos de empréstimos e 
-          financiamentos, e ainda incluem produtos indesejados sem o conhecimento do cliente.
+        <p className="text-2xl text-center">
+          Os bancos frequentemente aplicam taxas e juros abusivos em contratos de empréstimos e financiamentos, e ainda incluem produtos indesejados sem o conhecimento do cliente.
           Revisar esses contratos pode recuperar valores pagos indevidamente e reduzir custos.
         </p>
 
-        <p className="text-2xl mt-10 text-center lg:w-[1200px] hidden md:block">
+        <p className="text-2xl mt-10 text-center">
           Acrescentar produtos ou serviços não solicitados nos contratos de empréstimos, configura prática abusiva conhecida como venda casada , proibida pelo Código de Defesa do Consumidor. Exemplos comuns incluem: Seguro Prestamista, Pacotes de Serviços Bancários, Títulos de Capitalização.
         </p>
 
@@ -76,42 +72,29 @@ export default function Home() {
         </div>
 
         <header className="flex flex-col bg-yellow-600 w-screen h-[30vh]">
-          <h2 className="lg:text-5xl text-2xl font-bold ml-10 text-black mt-28">O que fazer?</h2>
+          <h2 className="text-5xl font-bold ml-10 text-black mt-28">O que fazer?</h2>
         </header>
 
-        <article className="flex flex-col md:flex-row gap-2 lg:px-44 bg-zinc-900 lg:w-screen h-[80vh] p-2 lg:p-10 md:0">
-          
-          <article className="flex-1 md:p-8 lg:mt-20 flex flex-col -ml-2s w-[220px] items-center md:flex-col">
-            <img className="self-center item-p-1 md:mr-5 lg:w-[100px] w-[70px]" src="image/icon-balanca.png" alt="" />
-            
-            <div className="border-t-2 mt-4">
-              <h2 className="text-white lg:mb-5 mb-0">1º Passo</h2>
-              
-              <p className="text-white">Agenda uma consulta com nossos advogados especialistas e faça uma análise gratuita
-                do seu contrato.</p>
-            </div>
-
-          </article>
-          
-          <article className="flex-1 md:p-8 lg:mt-20 flex flex-col -ml-2s w-[220px] items-center md:flex-col">
-          <img className="self-center item-p-1 md:mr-5 lg:w-[100px] w-[70px]" src="image/icone-money.png" width={100} alt="" />
-            <div className="border-t-2 mt-4">
-              <h2 className="text-white lg:mb-5 mb-0">2º Passo</h2>
-              <p className="text-white">Agenda uma consulta com nossos advogados especialistas e faça uma análise gratuita
-                do seu contrato.</p>
-            </div>
-          </article>
-          
-          <article className="flex-1 md:p-8 lg:mt-20 flex flex-col -ml-2s w-[220px] items-center md:flex-col">
-          <img className="self-center item-p-1 md:mr-5 lg:w-[100px] w-[70px]" src="image/icon-arrow.png" width={100} alt="" />
-            
-            <div className="border-t-2 mt-4">
-            <h2 className="text-white lg:mb-5 mb-0">3º Passo</h2>
+        <article className="flex flex-col items-center md:flex-row gap-2 bg-zinc-900 w-screen h-[80vh] p-10 md:0">
+          <article className="flex-1 md:p-8 flex items-center md:flex-col">
+            <img className="self-center item-p-1 md:mr-5" src="image/icon-balanca.png" width={100} alt="" />
+            <h2 className="text-white mb-5">1º Passo</h2>
             <p className="text-white">Agenda uma consulta com nossos advogados especialistas e faça uma análise gratuita
               do seu contrato.</p>
-            </div>
-          </article>
 
+          </article>
+          <article className="flex-1 md:p-8 items-center flex md:flex-col bg-zinc-900">
+            <img className="self-center item-p-2" src="image/icone-money.png" width={100} alt="" />
+            <h2 className="text-white mb-5">2º Passo</h2>
+            <p className="text-white">Agenda uma consulta com nossos advogados especialistas e faça uma análise gratuita
+              do seu contrato.</p>
+          </article>
+          <article className="flex-1 md:p-8 items-center flex md:flex-col bg-zinc-900">
+            <img className="self-center item-p-3" src="image/icon-arrow.png" width={100} alt="" />
+            <h2 className="text-white mb-5">3º Passo</h2>
+            <p className="text-white">Agenda uma consulta com nossos advogados especialistas e faça uma análise gratuita
+              do seu contrato.</p>
+          </article>
         </article>
       </section>
 
