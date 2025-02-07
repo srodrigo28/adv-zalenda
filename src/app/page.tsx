@@ -51,8 +51,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2 sessão pronto */}
-      <section className="flex flex-col items-center session-2 p-20 relative text-white" style={{
+      {/* 2 sessão pronto SESSÃO ESTÁ OCULTA */}
+      <section className="hidden flex-col items-center session-2 p-20 relative text-white" style={{
           backgroundImage: `url("./image/page2.png")`,
           width: '100', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
         }}> 
