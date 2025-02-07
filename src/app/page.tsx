@@ -25,7 +25,7 @@ export default function Home() {
     <div className="flex flex-col w-screen relative">
 
       {/** ALTERAR O TELEFONE */}
-      <a href="https://api.whatsapp.com/send?phone=5562998579084&text=Quero%20fazer%20um%20agendamento%20hoje!"
+      <a href="https://api.whatsapp.com/send?phone=5569992682118&text=Quero%20fazer%20um%20agendamento%20hoje!"
         target="_blank">
         <button className="z-50 fixed bottom-10 right-2 animate-pulse">
           <img src="./image/zap.png" className="w-28 lg:w-44" alt="" />
