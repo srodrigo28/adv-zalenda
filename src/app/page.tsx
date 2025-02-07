@@ -37,7 +37,7 @@ export default function Home() {
       {/* 1 sessão pronto */}
       <section className="flex relative w-full">
 
-        <div className="absolute top-2 md:top-10 left-10 z-10" data-aos="fade-down">
+        <div className="absolute top-2 md:top-10 left-10 z-10">
           <Logo />
         </div>
 
@@ -235,8 +235,8 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row w-screen">
 
           <div className=" lg:w-[35%] mt-96 lg:mt-2 lg:ml-44 w-[90%] mx-auto flex flex-col h-96 relative">
-            <img src="./image/perfil.png" alt="" className="lg:mt-64 lg:ml-44 w-[400px]"/>
-            <h2 className="text-zinc-50 bg-zinc-950/50 p-2 px-5 rounded-md lg:text-3xl text-2xl font-bold mt-96 lg:ml-64 ml-28 absolute lg:top-72 ">
+            <img src="./image/perfil.png" alt="" className="lg:mt-64 lg:ml-44 animate-pulse w-[400px]"/>
+            <h2 className="text-zinc-50 animate-pulse bg-zinc-950/50 p-2 px-5 rounded-md lg:text-3xl text-2xl font-bold mt-96 lg:ml-64 ml-28 absolute lg:top-72 ">
               Iago Zalenda
             </h2>
           </div>
