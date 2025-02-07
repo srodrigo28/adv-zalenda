@@ -27,13 +27,13 @@ export default function Home() {
       {/** ALTERAR O TELEFONE */}
       <a href="https://api.whatsapp.com/send?phone=5562998579084&text=Quero%20fazer%20um%20agendamento%20hoje!"
         target="_blank">
-        <button className="z-50 fixed bottom-10 right-10 animate-pulse">
-          <img src="./image/zap.png" className="w-80" alt="" />
+        <button className="z-50 fixed bottom-10 right-2 animate-pulse">
+          <img src="./image/zap.png" className="w-28 lg:w-44" alt="" />
         </button>
       </a>
 
       {/* 1 sessão pronto */}
-      <section className="flex relative w-full">
+      <section className="flex relative 3xs:h-[70vh] w-full">
 
         <div className="absolute top-2 md:top-10 left-10 z-10">
           <Logo />
@@ -61,9 +61,9 @@ export default function Home() {
           <Logo />
         </div>
 
-        <h2 className="text-xl lg:text-7xl mt-16 mb-16 w-[350px] ml-8 lg:w-[800px] md:text-start lg:text-center">Empréstimo com juros e taxas indevidas?</h2>
+        <h2 className="text-xl lg:text-7xl mt-16 mb-16 w-[350px] -  ml-3 lg:w-[800px] md:text-start lg:text-center">Empréstimo com juros e taxas indevidas?</h2>
 
-        <p className="text-md px-2 lg:text-2xl text-start md:text-center -ml-2 w-[320px] lg:w-[1200px]">
+        <p className="text-md px-2 lg:text-2xl text-start md:text-center -ml-5 w-[320px] ">
           Os bancos frequentemente aplicam taxas e juros abusivos em contratos de empréstimos e 
           financiamentos, e ainda incluem produtos indesejados sem o conhecimento do cliente.
           Revisar esses contratos pode recuperar valores pagos indevidamente e reduzir custos.
@@ -124,7 +124,7 @@ export default function Home() {
       </section>
 
       {/* 4 sessão pronto */}
-      <section className="flex relative h-screen">
+      <section className="flex relative lg:h-screen h-[180vh] flex-col lg:flex-row">
 
         <div className="flex-1 bg-yellow-600 flex flex-col justify-center px-5 items-center">
           <h1 className=" font-extrabold p-4 w-full text-black text-7xl text-center"> Efeitos da <br /> revisão: </h1>
@@ -168,8 +168,8 @@ export default function Home() {
 
       </section>
 
-      {/* 5 sessão pronto */}  
-      <section className="flex flex-col relative h-[160vh] lg:h-screen bg-white">
+      {/* 5 sessão pronto Conheça Nossos Serviços */}  
+      <section className="flex flex-col relative h-[160vh] justify-center max-w[1280px mx-auto] lg:h-screen bg-white">
         <div style={{
           backgroundImage: `url("./image/topo.png")`,
           width: '100%', height: '25vh', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
