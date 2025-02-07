@@ -16,7 +16,7 @@ export function ItemText( { className, conteudo, iconColor } : ItemTextProps){
                     <Clock2 color={iconColor} size={30} className="" />
                 </div>
 
-                <p className={`lg:text-3xl flex-1 text-lg ${className} `} > {conteudo} </p>
+                <p data-aos="zoom-in" data-aos-deley="900" className={`lg:text-3xl flex-1 text-lg ${className} `} > {conteudo} </p>
 
             </div>
         </div>

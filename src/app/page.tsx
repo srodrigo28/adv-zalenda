@@ -129,7 +129,7 @@ export default function Home() {
           <h1 className=" font-extrabold p-4 w-full text-black text-7xl text-center"> Efeitos da <br /> revisão: </h1>
 
           <div data-aos="fade-up" className="bg-white lg:w-[600px] p-5 text-black w-full rounded-2xl" >
-            <p className="text-justify lg:text-2xl">
+            <p data-aos="zoom-in" data-aos-deley="900" className="text-justify lg:text-2xl">
               A revisão de contratos de empréstimo
               consiste em uma análise minuciosa
               das cláusulas contratuais, buscando
