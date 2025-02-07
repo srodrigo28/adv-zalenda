@@ -1,6 +1,6 @@
 export function Logo() {
     return(
-        <div className="flex gap-2 items-center justify-center">
+        <div className="flex gap-2 items-center justify-center lg:ml-2">
             <img 
                 src="./image/logo.png" 
                 width={40} height={32} alt="não carregou"
