@@ -34,7 +34,7 @@ export default function Home() {
       </a>
 
       {/* 1 sessão pronto */}
-      <section className="flex relative 3xs:h-[70vh] w-full overflow-x-hidden">
+      <section className="flex relative 3xs:h-[70vh] w-full  ">
 
         <div className="absolute top-2 md:top-10 left-10 z-10">
           <Logo />
@@ -53,7 +53,7 @@ export default function Home() {
       </section>
 
       {/* 2 sessão pronto SESSÃO ESTÁ OCULTA */}
-      <section className="overflow-x-hidden flex flex-col items-center session-2 h-[120vh] lg:h-[90vh] p-20 relative text-white" style={{
+      <section className="  flex flex-col items-center session-2 h-[120vh] lg:h-[90vh] p-20 relative text-white" style={{
           backgroundImage: `url("./image/page2.png")`,
           width: '100', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
         }}> 
@@ -76,7 +76,7 @@ export default function Home() {
       </section>
 
       {/* 3 sessão pronto */}
-      <section className="overflow-x-hidden flex flex-col relative">
+      <section className="  flex flex-col relative">
 
         <div className="absolute top-10 left-10  z-10">
           <Logo />
@@ -124,7 +124,7 @@ export default function Home() {
       </section>
 
       {/* 4 sessão pronto */}
-      <section className="overflow-x-hidden flex relative h-[200vh] lg:h-[100vh] flex-col lg:flex-row">
+      <section className="  flex relative h-[200vh] lg:h-[100vh] flex-col lg:flex-row">
 
         <div className="flex-1 bg-yellow-600 flex flex-col justify-center px-5 items-center">
           <h1 className=" font-extrabold p-4 w-full text-black text-7xl text-center"> Efeitos da <br /> revisão: </h1>
@@ -169,7 +169,7 @@ export default function Home() {
       </section>
 
       {/* 5 sessão pronto Conheça Nossos Serviços */}  
-      <section className="overflow-x-hidden flex flex-col relative h-[100vh] justify-center max-w[1280px mx-auto] lg:h-screen bg-white">
+      <section className="  flex flex-col relative h-[100vh] justify-center max-w[1280px mx-auto] lg:h-screen bg-white">
         <div style={{
           backgroundImage: `url("./image/topo.png")`,
           width: '100%', height: '25vh', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
@@ -220,7 +220,7 @@ export default function Home() {
       </section>
 
       {/* 6 sessão  */}
-      <section className="overflow-x-hidden flex relative  h-[230vh] w-full lg:h-[100vh] " style={{
+      <section className="  flex relative  h-[230vh] w-full lg:h-[100vh] " style={{
           backgroundImage: `url("./image/perfil-page.png")`,
           width: '100', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
         }}>     
@@ -251,7 +251,7 @@ export default function Home() {
       </section>
 
       {/* 7 sessão Contato  */}
-      <section className="overflow-x-hidden flex items-center lg:h-[100vh]">
+      <section className="  flex items-center lg:h-[100vh]">
 
         <div className="items-center justify-start lg:flex hidden"
           style={{
