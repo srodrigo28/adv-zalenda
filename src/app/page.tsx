@@ -7,6 +7,8 @@ import { CiBag1 } from "react-icons/ci";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { ItemText } from "@/components/ItemText/intext";
 import { ItemBox } from "@/components/ItemBox";
+import { motion } from "motion/react"
+
 
 export default function Home() {
 
@@ -22,12 +24,20 @@ export default function Home() {
     }
   }, [])
   return (
-    <div className="flex flex-col w-screen">
+    <div className="flex flex-col w-screen relative">
+
+      {/** ALTERAR O TELEFONE */}
+      <a href="https://api.whatsapp.com/send?phone=5562998579084&text=Quero%20fazer%20um%20agendamento%20hoje!"
+        target="_blank">
+        <button className="z-50 fixed bottom-10 right-10 animate-pulse">
+          <img src="./image/zap.png" className="w-80" alt="" />
+        </button>
+      </a>
 
       {/* 1 sessão pronto */}
       <section className="flex relative w-full">
 
-        <div className="absolute top-2 md:top-10 left-10  z-10">
+        <div className="absolute top-2 md:top-10 left-10 z-10" data-aos="fade-down">
           <Logo />
         </div>
 
@@ -75,17 +85,18 @@ export default function Home() {
           <Logo />
         </div>
 
-        <header className="flex flex-col bg-yellow-600 w-screen lg:h-[30vh h-[15vh]]">
+        <header className="flex flex-col bg-yellow-600 w-screen lg:h-[22vh] h-[20vh]">
           <h2 className="lg:text-5xl text-2xl font-bold ml-10 text-black mt-28">O que fazer?</h2>
         </header>
 
-        <article className="flex flex-col md:flex-row gap-2 lg:px-44 bg-zinc-900 lg:w-screen h-[80vh] p-2 lg:p-10 md:0">
+        <article className="flex flex-col md:flex-row gap-2 lg:px-44 bg-zinc-900 
+        lg:w-screen h-[90vh] lg:h-[60vh] p-2 lg:p-10 md:0">
           
           <article className="flex-1 md:p-8 lg:mt-20 flex flex-col w-[350px] mx-auto items-center md:flex-col">
-            <img className="self-center item-p-1 md:mr-5 lg:w-[100px] w-[70px]" src="image/icon-balanca.png" alt="" />
+            <img className="self-center mt-10 lg:mt-1 item-p-1 mb-4 md:mr-5 lg:w-[100px] w-[70px]" src="image/icon-balanca.png" alt="" />
             
             <div className="border-t-2 mt-4 ">
-              <h2 className="text-white lg:mb-5 mb-0">1º Passo</h2>
+              <h2 className="text-white mb-5">1º Passo</h2>
               
               <p className="text-white">Agenda uma consulta com nossos advogados especialistas e faça uma análise gratuita
                 do seu contrato.</p>
@@ -94,19 +105,19 @@ export default function Home() {
           </article>
           
           <article className="flex-1 md:p-8 lg:mt-20 flex flex-col w-[350px] mx-auto items-center md:flex-col">
-          <img className="self-center item-p-1 md:mr-5 lg:w-[100px] w-[70px]" src="image/icone-money.png" width={100} alt="" />
+          <img className="self-center mb-5 item-p-1 md:mr-5 lg:w-[100px] w-[70px]" src="image/icone-money.png" width={100} alt="" />
             <div className="border-t-2 mt-4">
-              <h2 className="text-white lg:mb-5 mb-0">2º Passo</h2>
+              <h2 className="text-white mb-5">2º Passo</h2>
               <p className="text-white">Agenda uma consulta com nossos advogados especialistas e faça uma análise gratuita
                 do seu contrato.</p>
             </div>
           </article>
           
           <article className="flex-1 md:p-8 lg:mt-20 flex flex-col w-[350px] mx-auto items-center md:flex-col">
-          <img className="self-center item-p-1 md:mr-5 lg:w-[100px] w-[70px]" src="image/icon-arrow.png" width={100} alt="" />
+          <img className="self-center item-p-1 mb-5 md:mr-5 lg:w-[100px] w-[70px]" src="image/icon-arrow.png" width={100} alt="" />
             
             <div className="border-t-2 mt-4">
-            <h2 className="text-white lg:mb-5 mb-0">3º Passo</h2>
+            <h2 className="text-white mb-5">3º Passo</h2>
             <p className="text-white">Agenda uma consulta com nossos advogados especialistas e faça uma análise gratuita
               do seu contrato.</p>
             </div>
@@ -118,11 +129,11 @@ export default function Home() {
       {/* 4 sessão pronto */}
       <section className="flex relative h-screen">
 
-        <div className="flex-1 bg-yellow-600 flex flex-col justify-center items-center">
+        <div className="flex-1 bg-yellow-600 flex flex-col justify-center px-5 items-center">
           <h1 className=" font-extrabold p-4 w-full text-black text-7xl text-center"> Efeitos da <br /> revisão: </h1>
 
-          <div className="bg-white p-5 text-black w-96 rounded-2xl" >
-            <p className="text-justify">A revisão de contratos de empréstimo
+          <div className="bg-white lg:w-[600px] p-5 text-black w-full rounded-2xl" >
+            <p className="text-justify lg:text-2xl">A revisão de contratos de empréstimo
               consiste em uma análise minuciosa
               das cláusulas contratuais, buscando
               identificar e corrigir eventuais
@@ -212,7 +223,7 @@ export default function Home() {
       </section>
 
       {/* 6 sessão  */}
-      <section className="flex relative  h-[240vh] w-full lg:h-[100vh] " style={{
+      <section className="flex relative  h-[230vh] w-full lg:h-[100vh] " style={{
           backgroundImage: `url("./image/perfil-page.png")`,
           width: '100', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
         }}>     
@@ -245,7 +256,7 @@ export default function Home() {
       {/* 7 sessão Contato  */}
       <section className="flex items-center lg:h-[100vh]">
 
-        <div className="flex items-center justify-start lg:block hidden"
+        <div className="items-center justify-start lg:flex hidden"
           style={{
             backgroundImage: `url("./image/contato-left.png")`,
             width: '100%', height: '100vh', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
