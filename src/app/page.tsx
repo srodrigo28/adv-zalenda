@@ -7,7 +7,6 @@ import { CiBag1 } from "react-icons/ci";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { ItemText } from "@/components/ItemText/intext";
 import { ItemBox } from "@/components/ItemBox";
-import { motion } from "motion/react"
 
 
 export default function Home() {
