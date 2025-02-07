@@ -129,7 +129,8 @@ export default function Home() {
           <h1 className=" font-extrabold p-4 w-full text-black text-7xl text-center"> Efeitos da <br /> revisão: </h1>
 
           <div data-aos="fade-up" className="bg-white lg:w-[600px] p-5 text-black w-full rounded-2xl" >
-            <p className="text-justify lg:text-2xl">A revisão de contratos de empréstimo
+            <p className="text-justify lg:text-2xl">
+              A revisão de contratos de empréstimo
               consiste em uma análise minuciosa
               das cláusulas contratuais, buscando
               identificar e corrigir eventuais
@@ -146,8 +147,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-black flex-1">
-          <div className="absolute top-10 left-10  z-10">
+        <div className="bg-black flex-1" data-aos="fade-down" data-aos-deley="500" >
+          <div className="absolute top-10 left-10 z-10">
             <Logo />
           </div>
 
@@ -237,12 +238,12 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className=" lg:w-[700px] w-[100%] lg:h-[600px] text-white lg:mt-44 animate-pulse 
+          <div data-aos="fade-up" className=" lg:w-[700px] w-[100%] lg:h-[600px] text-white lg:mt-44
             bg-slate-900 mt-52 mr-20 p-10 flex flex-col gap-5 rounded-lg lg:mr-64">
-            <p> O escritório ZALENDA ADVOGADOS, é uma sociedade de advogados, sediado em Porto Velho-RO, com atuação On-line em Todo o Território Nacional, através de parcerias estratégicas. </p>
-            <p> Toda a jornada iniciou em 2015, por seu sócio fundador Iágo Zalenda, que após iniciar sua militância junto a grandes e renomados escritórios, adquirindo vasta Experiência, decidiu por dar continuidade a sua via Empreendedora, e que hoje, no escritório, conta com uma equipe de respeitados profissionais, e atuação ativa e especializada em prol dos interesses de seus clientes . </p>
-            <p> O sócio fundador, Iágo Zalenda, acumulou experiência significativa no mercado financeiro, participando em instituições renomadas. Essa trajetória confere-lhe um profundo conhecimento em operações bancárias e no atendimento às demandas de empresas de diversos setores. Sua expertise no Direito Bancário fortalece o posicionamento do escritório em questões relacionadas às instituições financeiras, agronegócio, setores e comércio. </p>
-            <p> Com estrutura robusta e tecnologia de ponta, o Zalenda Advogados presta serviços jurídicos de alta qualidade em todo o Brasil, otimizando tempo e custos para seus clientes. Nosso compromisso com a ética, a cooperação e a confiabilidade é o que nos diferencia e consolida como referência na advocacia empresarial e bancária. </p>
+            <p data-aos="fade-up" data-aos-deley="900"> O escritório ZALENDA ADVOGADOS, é uma sociedade de advogados, sediado em Porto Velho-RO, com atuação On-line em Todo o Território Nacional, através de parcerias estratégicas. </p>
+            <p data-aos="fade-up" data-aos-deley="1500" > Toda a jornada iniciou em 2015, por seu sócio fundador Iágo Zalenda, que após iniciar sua militância junto a grandes e renomados escritórios, adquirindo vasta Experiência, decidiu por dar continuidade a sua via Empreendedora, e que hoje, no escritório, conta com uma equipe de respeitados profissionais, e atuação ativa e especializada em prol dos interesses de seus clientes . </p>
+            <p data-aos="fade-up" data-aos-deley="1700"> O sócio fundador, Iágo Zalenda, acumulou experiência significativa no mercado financeiro, participando em instituições renomadas. Essa trajetória confere-lhe um profundo conhecimento em operações bancárias e no atendimento às demandas de empresas de diversos setores. Sua expertise no Direito Bancário fortalece o posicionamento do escritório em questões relacionadas às instituições financeiras, agronegócio, setores e comércio. </p>
+            <p data-aos="fade-up" data-aos-deley="1900"> Com estrutura robusta e tecnologia de ponta, o Zalenda Advogados presta serviços jurídicos de alta qualidade em todo o Brasil, otimizando tempo e custos para seus clientes. Nosso compromisso com a ética, a cooperação e a confiabilidade é o que nos diferencia e consolida como referência na advocacia empresarial e bancária. </p>
           </div>
 
         </div>
@@ -258,7 +259,7 @@ export default function Home() {
             width: '100%', height: '100vh', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
           }}>
 
-          <h2 className="text-black text-8xl font-bold lg:mt-[260px] lg:ml-96">Contato</h2>
+          <h2 data-aos="fade-left" className="text-black text-8xl font-bold lg:mt-[260px] lg:ml-96">Contato</h2>
 
         </div>
 
@@ -270,19 +271,19 @@ export default function Home() {
           }}>
 
           <div className="p-10">
-            <h3 data-aos="fade-up" className="text-6xl font-bold -ml-16 block lg:hidden">Contato</h3>
+            <h3 className="text-6xl font-bold -ml-16 flex lg:hidden">Contato</h3>
 
-            <div data-aos="fade-right" className="row mb-4 pt-12 -ml-10">
+            <div data-aos="fade-right" data-aos-delay="500" className="row mb-4 pt-12 -ml-10">
               <h3 className="font-bold text-black text-4xl">E-mail</h3>
               <p className="text-black text-xl">zalendaadvogados@gmail.com</p>
             </div>
 
-            <div data-aos="fade-left" className="row mb-4 -ml-10">
+            <div data-aos="fade-left" data-aos-delay="500" className="row mb-4 -ml-10">
               <h3 className="font-bold text-black text-4xl">Redes sociais</h3>
               <p className="text-black text-xl">@zalenda.advogados</p>
             </div>
 
-            <div data-aos="fade-right" className="row -ml-10">
+            <div data-aos="fade-right" data-aos-delay="500" className="row -ml-10">
               <h3 className="font-bold text-black text-4xl">Telefone</h3>
               <p className="text-black text-xl">(69)99268-2118</p>
             </div>
